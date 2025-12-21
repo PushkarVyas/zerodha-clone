@@ -1,0 +1,26 @@
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #387ed1, #1c3faa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.auth-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.auth-btn {
+  width: 100%;
+}
