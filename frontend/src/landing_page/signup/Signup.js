@@ -16,9 +16,8 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/signup", form);
-      localStorage.setItem("token", res.data.token);
-      window.location.href = "http://localhost:3001";
+      const res = await axios.post("http://localhost:3002/signup", form);
+      window.location.href = `http://localhost:3001?token=${res.data.token}`;
     } catch (err) {
       alert(err.response?.data?.message || "Signup failed");
     }
